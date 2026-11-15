@@ -7,9 +7,10 @@ const changeAdressInRedis = async ({redis, oldAdress, newAdress})=>{
 
 
         const hashKeys = [
-            'adressInfo',
+            'adressInfoN',
             'adress:sub:status',
-            'adress:sub:playerCountInTitle'
+            'adress:sub:playerCountInTitle',
+            'adressImgs'
         ];
 
         for (const hashKey of hashKeys) {
